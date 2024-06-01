@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  /* Styling for Product Details */
+  .text-lg {
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for Available Colors */
+  ul {
+    list-style: disc inside;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Styling for Product Images */
+  .product-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product-images img {
+    max-width: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for Stores and Prices Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .text-red-500 {
+    color: #e3342f;
+  }
+  
+  .text-blue-500 {
+    color: #3490dc;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f7fafc;
+  }
+  
+  .bg-white {
+    background-color: #fff;
+  }
+  
+  .border-gray-300 {
+    border-color: #d2d6dc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid-cols-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .product-images img {
+      max-width: 80px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
+  
